@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+		html{
+			background-color: #E4E9FD;
+            background-image: -webkit-linear-gradient(65deg, #A683E3 50%, #E4E9FD 50%);
+            min-height: 1000px;
+            font-family: 'helvetica neue';
+		}
+		body {
+			font-family: Arial, sans-serif;
+			text-align: center;
+
+		}
+		h1 {
+			font-size: 3rem;
+		}
+		form {
+			margin-top: 2rem;
+		}
+		input[type="text"] {
+			padding: 0.5rem;
+			font-size: 1.2rem;
+			border-radius: 0.25rem;
+			border: none;
+			box-shadow: 0 0 0.25rem rgba(0, 0, 0, 0.25);
+		}
+		button {
+			margin-left: 0.5rem;
+			padding: 0.5rem 1rem;
+			font-size: 1.2rem;
+			background-color: #A683E3;
+			color: #FFFFFF;
+			border-radius: 0.25rem;
+			border: none;
+			box-shadow: 0 0 0.25rem rgba(0, 0, 0, 0.25);
+			cursor: pointer;
+		}
+		.weather {
+			margin-top: 2rem;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.25);
+			padding: 1rem;
+			border-radius: 0.25rem;
+		}
+		.weather img {
+			width: 6rem;
+			height: 6rem;
+			margin-bottom: 1rem;
+		}
+		.weather p {
+			font-size: 1.2rem;
+			margin: 0.5rem 0;
+		}
+	</style>
+    <title>weather APP</title>
+</head>
+<body>
+    <h1>WEATHER APP</h1>
+    <form  action="/" method="post">
+    <label for="cityinput">cityname:</label>
+    <input id="cityinput" type="text" name="cityname">
+    <button type="submit">Go</button>
+    </form>
+</body>
+</html>
